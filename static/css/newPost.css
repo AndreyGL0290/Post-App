@@ -1,0 +1,13 @@
+.new-post-form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50%;
+}
+
+.new-post-submit-button {
+    width: 50%;
+}
+
+.new-post-submit-button-container {
+    text-align: center;
+}

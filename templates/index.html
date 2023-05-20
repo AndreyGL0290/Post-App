@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Posts</title>
+</head>
+<body>
+    <div class="posts">
+        {% for post in data %}
+        <div class="post">
+            <p class="post-text">
+                {{ post[1] }}
+            </p>
+            <form action="/deletePost" id="delete-form" method="post">
+                <textarea name="post-id" id="post-id" style="display: none;">{{post[0]}}</textarea>
+                <input id='delete-post-button'type="submit" value="Delete">
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="new-post-button">
+        <a href="/newPost" class="new-post-button-text">Create Post</a>
+    </div>
+    <script src="static/js/postData.js"></script>
+</body>
+
+</html>
