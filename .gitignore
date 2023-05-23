@@ -10,3 +10,4 @@
 
 ### Environmental variables ###
 .env
+wsgi-env.py
