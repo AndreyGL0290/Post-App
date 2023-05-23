@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect, request
+from dotenv import load_dotenv
 
 from DB.posts.pull_posts import pull_posts
 from DB.posts.push_post import push_post
@@ -28,4 +29,5 @@ def postPage():
     return render_template('newPost.html')
 
 if __name__ == '__main__':
+    load_dotenv()
     app.run(host='127.0.0.1', port=8000)
