@@ -1,2 +1,5 @@
 ### Environmental variables ###
 .env
+
+### Python Cache ###
+**/__pycache__
