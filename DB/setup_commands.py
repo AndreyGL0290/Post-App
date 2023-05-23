@@ -1,3 +1,10 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+import sys
+from os import getenv
+sys.path.append(getenv('WORKING_DIRECTORY'))
+
 from DB.connection import SQLiteConnection
 
 def create():
