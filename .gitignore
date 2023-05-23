@@ -1,5 +1,6 @@
-### Environmental variables ###
-.env
+### Logs ###
+**/logs
+*.log
 
 ### Python Cache ###
 **/__pycache__
@@ -7,5 +8,5 @@
 ### DB ###
 *.db
 
-### Logs ###
-/logs
+### Environmental variables ###
+.env
