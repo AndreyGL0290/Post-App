@@ -11,3 +11,6 @@
 ### Environmental variables ###
 .env
 wsgi_env.py
+
+### Apache .wsgi ###
+*.wsgi
